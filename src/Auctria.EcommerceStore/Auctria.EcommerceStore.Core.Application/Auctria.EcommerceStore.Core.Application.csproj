@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Auctria.EcommerceStore.Core.Domain\Auctria.EcommerceStore.Core.Domain.csproj" />
     <ProjectReference Include="..\Auctria.EcommerceStore.Domain\Auctria.EcommerceStore.Core.Domain.csproj" />
   </ItemGroup>
 

@@ -15,10 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Auctria.EcommerceStore.Domain\Auctria.EcommerceStore.Core.Domain.csproj" />
+    <ProjectReference Include="..\Auctria.EcommerceStore.Core.Application\Auctria.EcommerceStore.Core.Application.csproj" />
+    <ProjectReference Include="..\Auctria.EcommerceStore.Core.Domain\Auctria.EcommerceStore.Core.Domain.csproj" />
+    <ProjectReference Include="..\Auctria.EcommerceStore.Infrastructure.Persistence\Auctria.EcommerceStore.Infrastructure.Persistence.csproj" />
     <ProjectReference Include="..\Auctria.EcommerceStore.Infrastructure\Auctria.EcommerceStore.Infrastructure.csproj" />
-    <ProjectReference Include="..\Auctria.EcommerceStore.Persistence\Auctria.EcommerceStore.Infrastructure.Persistence.csproj" />
-    <ProjectReference Include="..\Auctria.EcommerceStore.Shared\Auctria.EcommerceStore.Core.Application.csproj" />
   </ItemGroup>
 
 </Project>

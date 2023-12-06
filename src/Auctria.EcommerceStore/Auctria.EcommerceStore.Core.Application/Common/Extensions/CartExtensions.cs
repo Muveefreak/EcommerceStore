@@ -1,5 +1,4 @@
-﻿using Auctria.EcommerceStore.Core.Application.Carts;
-using Auctria.EcommerceStore.Core.Domain.Entities;
+﻿
 
 namespace Auctria.EcommerceStore.Core.Application.Common.Extensions;
 
