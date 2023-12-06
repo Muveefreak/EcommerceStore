@@ -1,0 +1,9 @@
+﻿global using Auctria.EcommerceStore.Core.Application.Common.Exceptions;
+global using Auctria.EcommerceStore.Core.Application.Common.Persistence;
+global using Auctria.EcommerceStore.Core.Domain.Common;
+global using Auctria.EcommerceStore.Core.Domain.Entities;
+global using Auctria.EcommerceStore.Infrastructure.Persistence.Context;
+global using Auctria.EcommerceStore.Infrastructure.Persistence.Repository;
+global using Auctria.EcommerceStore.Core.Application.Common.Mappings;
+global using Auctria.EcommerceStore.Core.Application.Products;
+global using Auctria.EcommerceStore.Core.Application.Common.Models;
