@@ -2,4 +2,5 @@
 public interface ICartItemRepository : IRepository<CartItem>
 {
     Task<CartItem> FindById(int cartItemId);
+    Task<CartItem> FindByProductIdAndCartId(int productId, int cartId);
 }

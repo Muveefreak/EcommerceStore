@@ -13,7 +13,8 @@ public static class CartExtensions
 
         var cartVm = new CartVm
         {
-            CustomerId = cart.CustomerId.ToString(),
+            Id = cart.Id,
+            CustomerId = cart.CustomerId,
             CartItems = new List<CartItemDto>()
         };
 
@@ -26,6 +27,7 @@ public static class CartExtensions
                     Id = cartItem.Id,
                     ProductId = cartItem.ProductId,
                     Quantity = cartItem.Quantity,
+                    Product = cartItem.Product,
                 };
 
                 cartVm.CartItems.Add(cartItemVm);

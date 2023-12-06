@@ -49,9 +49,9 @@ public class CartService : ICartService
             {
                 var task = _mediator.Send(new UpdateCartItemCommand
                 {
-                    Id = cartItem.Id,
                     Quantity = cartItem.Quantity,
-                    ProductId = cartItem.Quantity
+                    ProductId = cartItem.ProductId,
+                    CartId = cartItem.CartId
                 });
 
                 tasks.Add(task);

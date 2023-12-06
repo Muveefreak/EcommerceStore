@@ -7,8 +7,8 @@ namespace Auctria.EcommerceStore.Core.Application.CartItems.Commands;
 
 public record UpdateCartItemCommand : IRequest<bool>
 {
-    public int Id { get; set; }
     public int ProductId { get; set; }
+    public int CartId { get; set; }
     public int Quantity { get; set; }
 }
 
@@ -36,13 +36,22 @@ public class UpdateCartItemCommandHandler : IRequestHandler<UpdateCartItemComman
 
         if (productEntity.Stock < request.Quantity) throw new InsufficientStockException(nameof(Product), productEntity.Stock);
 
-        var cartEntity = await _cartItemRepository
-            .Find(request.Id);
+        var cartItemToUpdate = await _cartItemRepository
+            .FindByProductIdAndCartId(request.ProductId, request.CartId);
 
-        if (cartEntity != null)
-            await _cartItemRepository.Update(cartEntity);
+        if (cartItemToUpdate != null)
+        {
+            cartItemToUpdate.Quantity = request.Quantity;
+            await _cartItemRepository.Update(cartItemToUpdate);
+        }
         else
-            await _cartItemRepository.Insert(cartEntity);
+        {
+            CartItem cartItemToCreate = new CartItem();
+            cartItemToCreate.Quantity = request.Quantity;
+            cartItemToCreate.ProductId = request.ProductId;
+            cartItemToCreate.CartId = request.CartId;
+            await _cartItemRepository.Insert(cartItemToCreate);
+        }
 
         return true;
     }
@@ -51,11 +60,6 @@ public class UpdateCartItemCommandHandler : IRequestHandler<UpdateCartItemComman
     {
         public UpdateCartItemValidator()
         {
-            RuleFor(p => p.Id)
-            .NotEmpty().WithMessage("{PropertyName} is required.")
-            .NotNull()
-            .GreaterThan(0);
-
             RuleFor(p => p.ProductId)
             .NotEmpty().WithMessage("{PropertyName} is required.")
             .NotNull()

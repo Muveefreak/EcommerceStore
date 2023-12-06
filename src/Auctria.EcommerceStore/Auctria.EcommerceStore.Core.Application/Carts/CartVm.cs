@@ -2,25 +2,10 @@
 
 public class CartVm
 {
-    private int _totalQuantity;
-    private float _totalPrice;
-    public string CustomerId { get; set; }
-    public float TotalPrice
-    {
-        get { return _totalPrice; }
-        internal set
-        {
-            _totalPrice = SetTotalPrice();
-        }
-    }
-    public int TotalQuantity
-    {
-        get { return _totalQuantity; }
-        internal set
-        {
-            _totalQuantity = SetTotalQuantity();
-        }
-    }
+    public int Id { get; set; }
+    public int CustomerId { get; set; }
+    public int TotalQuantity { get; set; }
+    public float TotalPrice { get; set; }
     public List<CartItemDto> CartItems { get; set; }
 
     internal int SetTotalQuantity()

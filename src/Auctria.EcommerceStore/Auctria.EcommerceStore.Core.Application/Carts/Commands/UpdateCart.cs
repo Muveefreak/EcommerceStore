@@ -8,7 +8,7 @@ public record UpdateCartCommand : IRequest<bool>
 {
     public int Id { get; init; }
     public int CustomerId { get; init; }
-    public List<UpdateCartItemVm> CartItems { get; init; }
+    public List<UpdateCartItemCommand> CartItems { get; init; }
 }
 
 public class UpdateCartCommandHandler : IRequestHandler<UpdateCartCommand, bool>

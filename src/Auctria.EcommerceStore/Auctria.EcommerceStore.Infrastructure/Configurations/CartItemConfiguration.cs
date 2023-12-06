@@ -13,6 +13,10 @@ public class CartItemConfiguration : IEntityTypeConfiguration<CartItem>
         builder.Property(t => t.Quantity)
             .IsRequired();
 
+        builder.HasKey(p => new { p.ProductId, p.CartId });
+
+        builder.HasIndex(p => p.ProductId).IsUnique();
+
         //builder.Property(p => p.RowVersion)
         //    .IsRowVersion();
     }
