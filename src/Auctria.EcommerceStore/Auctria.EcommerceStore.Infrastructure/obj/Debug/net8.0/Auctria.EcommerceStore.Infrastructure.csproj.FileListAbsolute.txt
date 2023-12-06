@@ -1,0 +1,17 @@
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Infrastructure\bin\Debug\net8.0\Auctria.EcommerceStore.Infrastructure.deps.json
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Infrastructure\bin\Debug\net8.0\Auctria.EcommerceStore.Infrastructure.dll
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Infrastructure\bin\Debug\net8.0\Auctria.EcommerceStore.Infrastructure.pdb
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Infrastructure\bin\Debug\net8.0\Auctria.EcommerceStore.Core.Application.dll
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Infrastructure\bin\Debug\net8.0\Auctria.EcommerceStore.Core.Domain.dll
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Infrastructure\bin\Debug\net8.0\Auctria.EcommerceStore.Core.Application.pdb
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Infrastructure\bin\Debug\net8.0\Auctria.EcommerceStore.Core.Domain.pdb
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Infrastructure\obj\Debug\net8.0\Auctria.EcommerceStore.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Infrastructure\obj\Debug\net8.0\Auctria.EcommerceStore.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Infrastructure\obj\Debug\net8.0\Auctria.EcommerceStore.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Infrastructure\obj\Debug\net8.0\Auctria.EcommerceStore.Infrastructure.AssemblyInfo.cs
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Infrastructure\obj\Debug\net8.0\Auctria.EcommerceStore.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Infrastructure\obj\Debug\net8.0\Auctria.EcommerceStore.Infrastructure.csproj.CopyComplete
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Infrastructure\obj\Debug\net8.0\Auctria.EcommerceStore.Infrastructure.dll
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Infrastructure\obj\Debug\net8.0\refint\Auctria.EcommerceStore.Infrastructure.dll
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Infrastructure\obj\Debug\net8.0\Auctria.EcommerceStore.Infrastructure.pdb
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Infrastructure\obj\Debug\net8.0\ref\Auctria.EcommerceStore.Infrastructure.dll

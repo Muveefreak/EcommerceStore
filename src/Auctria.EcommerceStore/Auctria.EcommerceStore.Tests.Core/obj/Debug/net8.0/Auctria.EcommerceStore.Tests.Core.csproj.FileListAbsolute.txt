@@ -1,0 +1,11 @@
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Tests.Core\bin\Debug\net8.0\Auctria.EcommerceStore.Tests.Core.deps.json
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Tests.Core\bin\Debug\net8.0\Auctria.EcommerceStore.Tests.Core.dll
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Tests.Core\bin\Debug\net8.0\Auctria.EcommerceStore.Tests.Core.pdb
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Tests.Core\obj\Debug\net8.0\Auctria.EcommerceStore.Tests.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Tests.Core\obj\Debug\net8.0\Auctria.EcommerceStore.Tests.Core.AssemblyInfoInputs.cache
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Tests.Core\obj\Debug\net8.0\Auctria.EcommerceStore.Tests.Core.AssemblyInfo.cs
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Tests.Core\obj\Debug\net8.0\Auctria.EcommerceStore.Tests.Core.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Tests.Core\obj\Debug\net8.0\Auctria.EcommerceStore.Tests.Core.dll
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Tests.Core\obj\Debug\net8.0\refint\Auctria.EcommerceStore.Tests.Core.dll
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Tests.Core\obj\Debug\net8.0\Auctria.EcommerceStore.Tests.Core.pdb
+C:\Users\HP\Documents\Projects\EcommerceStore\src\Auctria.EcommerceStore\Auctria.EcommerceStore.Tests.Core\obj\Debug\net8.0\ref\Auctria.EcommerceStore.Tests.Core.dll
