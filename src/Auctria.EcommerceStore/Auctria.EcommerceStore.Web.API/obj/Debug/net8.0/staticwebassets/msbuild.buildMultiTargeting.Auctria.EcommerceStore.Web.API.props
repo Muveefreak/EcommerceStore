@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Auctria.EcommerceStore.Web.API.props" />
-</Project>
