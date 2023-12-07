@@ -6,18 +6,14 @@ public class CartItemRepository : Repository<CartItem, EcommerceStoreDbContext>,
     public CartItemRepository(EcommerceStoreDbContext dataContext) : base(dataContext)
     {
     }
-    public Task<CartItem> FindById(int CartItemId)
-    {
-        return DbSet.FirstOrDefaultAsync(_ => _.Id == CartItemId);
-    }
 
-    public virtual async Task<CartItem> FindByProductIdAndCartId(int productId, int cartId)
+    public virtual async Task<CartItem?> GetCartItemByProductIdAndCartId(int productId, int cartId)
     {
         if (productId < 1 || cartId < 1)
         {
             return null;
         }
 
-        return DbSet.FirstOrDefault(x => x.ProductId == productId && x.CartId == cartId);
+        return DbSet?.FirstOrDefault(x => x.ProductId == productId && x.CartId == cartId);
     }
 }

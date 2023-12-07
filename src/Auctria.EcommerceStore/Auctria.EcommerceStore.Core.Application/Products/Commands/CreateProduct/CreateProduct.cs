@@ -31,7 +31,7 @@ public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand,
             .FirstOrDefaultAsync(l => l.SKU == request.SKU || l.Name == request.Name);
 
         if (productEntity != null)
-            throw new Common.Exceptions.InvalidOperationException("Duplicate record");
+            throw new InvalidOperationException("Duplicate record");
 
         Product productToCreate = new Product();
         productToCreate.SKU = request.SKU;

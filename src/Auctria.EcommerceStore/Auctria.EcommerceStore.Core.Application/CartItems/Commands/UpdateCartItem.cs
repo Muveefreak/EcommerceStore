@@ -14,15 +14,12 @@ public record UpdateCartItemCommand : IRequest<bool>
 
 public class UpdateCartItemCommandHandler : IRequestHandler<UpdateCartItemCommand, bool>
 {
-    private readonly IMapper _mapper;
     private readonly ICartItemRepository _cartItemRepository;
     private readonly IProductRepository _productRepository;
 
     public UpdateCartItemCommandHandler(ICartItemRepository cartItemRepository,
-        IProductRepository productRepository,
-        IMapper mapper)
+        IProductRepository productRepository)
     {
-        _mapper = mapper;
         _cartItemRepository = cartItemRepository;
         _productRepository = productRepository;
     }
@@ -37,7 +34,7 @@ public class UpdateCartItemCommandHandler : IRequestHandler<UpdateCartItemComman
         if (productEntity.Stock < request.Quantity) throw new InsufficientStockException(nameof(Product), productEntity.Stock);
 
         var cartItemToUpdate = await _cartItemRepository
-            .FindByProductIdAndCartId(request.ProductId, request.CartId);
+            .GetCartItemByProductIdAndCartId(request.ProductId, request.CartId);
 
         if (cartItemToUpdate != null)
         {

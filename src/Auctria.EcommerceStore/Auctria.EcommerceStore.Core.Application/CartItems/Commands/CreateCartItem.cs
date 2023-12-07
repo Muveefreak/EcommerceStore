@@ -40,7 +40,7 @@ public class CreateCartItemCommandHandler : IRequestHandler<CreateCartItemComman
         cartItemToCreate.CartId = request.CartId;
         cartItemToCreate.Quantity = request.Quantity;
         cartItemToCreate.ProductId = request.ProductId;
-        cartItemToCreate.UnitPrice = productEntity.UnitPrice;
+        //cartItemToCreate.UnitPrice = productEntity.UnitPrice;
 
         await _cartItemRepository.Insert(cartItemToCreate);
 

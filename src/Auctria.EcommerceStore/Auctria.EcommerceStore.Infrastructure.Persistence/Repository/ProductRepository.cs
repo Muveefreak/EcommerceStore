@@ -11,17 +11,12 @@ public class ProductRepository : Repository<Product, EcommerceStoreDbContext>, I
     {
         _mapper = mapper;
     }
-    public Task<Product> FindById(int productId)
+    public Task<Product?> GetProductById(int productId)
     {
         return DbSet.FirstOrDefaultAsync(_ => _.Id == productId);
     }
 
-    public Task<Product> FindBySKU(string sku)
-    {
-        return DbSet.FirstOrDefaultAsync(_ => _.SKU == sku);
-    }
-
-    public Task<PaginatedList<ProductVm>> GetAllPaginatedList(int pageNumber, int pageSize)
+    public Task<PaginatedList<ProductVm>> GetAllProductsPaginatedList(int pageNumber, int pageSize)
     {
         return DbSet
             .ProjectTo<ProductVm>(_mapper.ConfigurationProvider)

@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Auctria.EcommerceStore.Web.API.Controllers
 {
+    /// <summary>
+    /// Controller responsible for managing Cart.
+    /// </summary>
     [ApiController]
     [Route("api/[controller]")]
     public class CartController : ControllerBase
@@ -23,18 +26,29 @@ namespace Auctria.EcommerceStore.Web.API.Controllers
             _mediator = mediator;
         }
 
+        /// <summary>
+        /// Action method to display details of a specific cart.
+        /// </summary>
+        /// /// <param name="GetCartByIdQuery">Query that contains a unique identifier of the cart.</param>
+        /// <returns>The view containing details of the specified cart.</returns>
         [HttpPost]
-        [Route("GetCart")]
+        [Route("GetCartById")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(CartVm))]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [Produces("application/json")]
-        public async Task<IActionResult> GetCart(GetCartQuery request)
+        public async Task<IActionResult> GetCartById(GetCartByIdQuery request)
         {
             var response = await _mediator.Send(request);
             return Ok(response);
         }
 
+
+        /// <summary>
+        /// Action method to handle the HTTP POST request for updating a cart.
+        /// </summary>
+        /// <param name="UpdateCartCommand">The data submitted for updating a cart.</param>
+        /// <returns>Returns true when update is successful, but an error if update fails</returns>
         [HttpPost]
         [Route("UpdateCart")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(bool))]
@@ -47,6 +61,11 @@ namespace Auctria.EcommerceStore.Web.API.Controllers
             return Ok(response);
         }
 
+        /// <summary>
+        /// Action method to handle the HTTP POST request for creating a new cart.
+        /// </summary>
+        /// <param name="CreateCartCommand">The data submitted for creating a new cart.</param>
+        /// <returns>Returns the id of the created cart if successful; otherwise, returns an error.</returns>
         [HttpPost]
         [Route("CreateCart")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(int))]

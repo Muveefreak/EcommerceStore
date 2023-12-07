@@ -25,6 +25,6 @@ public class ListProductsWithPaginationQueryHandler : IRequestHandler<ListProduc
 
     public async Task<PaginatedList<ProductVm>> Handle(ListProductsWithPaginationQuery request, CancellationToken cancellationToken)
     {
-        return await _productRepository.GetAllPaginatedList(request.PageNumber, request.PageSize);
+        return await _productRepository.GetAllProductsPaginatedList(request.PageNumber, request.PageSize);
     }
 }

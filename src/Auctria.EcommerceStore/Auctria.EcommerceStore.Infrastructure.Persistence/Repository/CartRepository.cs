@@ -6,7 +6,7 @@ public class CartRepository : Repository<Cart, EcommerceStoreDbContext>, ICartRe
     public CartRepository(EcommerceStoreDbContext dataContext) : base(dataContext)
     {
     }
-    public Task<Cart> FindById(int CartId)
+    public Task<Cart?> GetCartById(int CartId)
     {
         return DbSet
             .Include(_ => _.CartItems)

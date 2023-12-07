@@ -1,4 +1,6 @@
-﻿global using Auctria.EcommerceStore.Core.Application.Products.Commands.CreateProduct;
+﻿global using Auctria.EcommerceStore.Core.Application.Products;
+global using Auctria.EcommerceStore.Core.Application.Products.Commands.CreateProduct;
+global using Auctria.EcommerceStore.Core.Application.Products.Commands.DeleteProduct;
 global using Auctria.EcommerceStore.Core.Application.Products.Commands.UpdateProduct;
 global using Auctria.EcommerceStore.Core.Application.Products.Queries;
 global using Auctria.EcommerceStore.Core.Application.Products.Queries.GetProduct;
