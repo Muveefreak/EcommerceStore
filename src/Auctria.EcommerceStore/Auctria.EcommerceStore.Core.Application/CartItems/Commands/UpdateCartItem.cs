@@ -31,7 +31,7 @@ public class UpdateCartItemCommandHandler : IRequestHandler<UpdateCartItemComman
 
         if (productEntity == null) throw new NotFoundException(nameof(Product), request.ProductId);
 
-        if (productEntity.Stock < request.Quantity) throw new InsufficientStockException(nameof(Product), productEntity.Stock);
+        if (productEntity.Stock < request.Quantity) throw new InsufficientStockException(nameof(Product), request.ProductId);
 
         var cartItemToUpdate = await _cartItemRepository
             .GetCartItemByProductIdAndCartId(request.ProductId, request.CartId);

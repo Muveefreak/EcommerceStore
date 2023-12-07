@@ -21,7 +21,7 @@ public class CartRepositoryMock
 
         var product2 = new Product
         {
-            Id = 1,
+            Id = 2,
             Name = "Coke",
             UnitPrice = 10,
             SKU = "CKE",
@@ -37,7 +37,6 @@ public class CartRepositoryMock
                 CartId = cartId,
                 ProductId = product1.Id,
                 Quantity = 3,
-                //UnitPrice = 10,
                 Product = product1
             },
             new CartItem
@@ -46,7 +45,6 @@ public class CartRepositoryMock
                 CartId = cartId,
                 ProductId = product2.Id,
                 Quantity = 4,
-                //UnitPrice = 10,
                 Product = product2
             }
         };

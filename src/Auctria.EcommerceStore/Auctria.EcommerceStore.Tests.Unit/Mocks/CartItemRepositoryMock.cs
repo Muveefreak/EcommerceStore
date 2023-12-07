@@ -24,7 +24,6 @@ namespace Auctria.EcommerceStore.Tests.Unit.Mocks
                 CartId = cartId,
                 ProductId = product.Id,
                 Quantity = 3,
-                //UnitPrice = 10,
                 Product = product
             };
             var mockCartItemRepository = new Mock<ICartItemRepository>();

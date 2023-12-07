@@ -14,13 +14,13 @@ namespace Auctria.EcommerceStore.Tests.Unit.Application.Queries
         }
 
         [Fact]
-        public async Task GetCartById_ReturnsCorrectCart()
+        public async Task Handle_Should_ReturnCart_OnSuccess_GetCartById()
         {
             // Arrange
             var handler = new GetCartByIdQueryHandler(_mockCartRepository.Object);
 
             // Act
-            var result = await handler.Handle(new GetCartByIdQuery(), CancellationToken.None);
+            var result = await handler.Handle(new GetCartByIdQuery { Id = 1}, CancellationToken.None);
 
             // Assert
             result.ShouldBeOfType<CartVm>();

@@ -50,11 +50,6 @@ public class UpdateProductValidator : AbstractValidator<UpdateProductCommand>
         .NotNull()
         .GreaterThan(0);
 
-        RuleFor(p => p.Stock)
-        .NotEmpty().WithMessage("{PropertyName} is required.")
-        .NotNull()
-        .GreaterThan(0);
-
         RuleFor(p => p.UnitPrice)
         .NotEmpty().WithMessage("{PropertyName} is required.")
         .NotNull()

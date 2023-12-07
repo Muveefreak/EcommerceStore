@@ -18,6 +18,9 @@ public class ProductRepository : Repository<Product, EcommerceStoreDbContext>, I
 
     public Task<PaginatedList<ProductVm>> GetAllProductsPaginatedList(int pageNumber, int pageSize)
     {
+        if (pageNumber == 0) pageNumber = 1;
+        if (pageSize == 0) pageSize = 10;
+
         return DbSet
             .ProjectTo<ProductVm>(_mapper.ConfigurationProvider)
             .PaginatedListAsync(pageNumber, pageSize);

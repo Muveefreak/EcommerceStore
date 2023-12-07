@@ -36,11 +36,12 @@ namespace Auctria.EcommerceStore.Web.API.Controllers
         }
 
         /// <summary>
-        /// Action method to display the list of items in a cart.
+        /// Action method to display the list of items in a cart. 
+        /// If page number is 0, it is defaulted to 1, if page size is 0, it will be defaulted to 10
         /// </summary>
         /// <returns>The view containing the list of items in a cart.</returns>
         [HttpPost]
-        [Route("GetAll")]
+        [Route("GetAllProducts")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<ProductVm>))]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]

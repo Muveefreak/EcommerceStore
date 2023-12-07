@@ -9,7 +9,6 @@ public record CreateCartItemCommand : IRequest<bool>
     public int CartId { get; set; }
     public int ProductId { get; set; }
     public int Quantity { get; set; }
-    public float UnitPrice { get; set; }
 }
 
 public class CreateCartItemCommandHandler : IRequestHandler<CreateCartItemCommand, bool>
@@ -40,7 +39,6 @@ public class CreateCartItemCommandHandler : IRequestHandler<CreateCartItemComman
         cartItemToCreate.CartId = request.CartId;
         cartItemToCreate.Quantity = request.Quantity;
         cartItemToCreate.ProductId = request.ProductId;
-        //cartItemToCreate.UnitPrice = productEntity.UnitPrice;
 
         await _cartItemRepository.Insert(cartItemToCreate);
 

@@ -15,13 +15,13 @@ public class UpdateCartItemTest
     }
 
     [Fact]
-    public async Task UpdateCartItem_ReturnsTrue_Onsuccess()
+    public async Task Handle_Should_ReturnsTrue_OnSuccess_UpdateCartItem()
     {
         // Arrange
         var handler = new UpdateCartItemCommandHandler(_mockCartItemRepository.Object, _mockProductRepository.Object);
 
         // Act
-        var result = await handler.Handle(new UpdateCartItemCommand(), CancellationToken.None);
+        var result = await handler.Handle(new UpdateCartItemCommand{ CartId = 1, ProductId = 1, Quantity = 2 }, CancellationToken.None);
 
         // Assert
         result.ShouldBeOfType<bool>();

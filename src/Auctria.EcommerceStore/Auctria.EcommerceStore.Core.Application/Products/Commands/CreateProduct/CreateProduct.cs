@@ -50,11 +50,6 @@ public class CreateProductValidator : AbstractValidator<CreateProductCommand>
 {
     public CreateProductValidator()
     {
-        RuleFor(p => p.Stock)
-        .NotEmpty().WithMessage("{PropertyName} is required.")
-        .NotNull()
-        .GreaterThan(0);
-
         RuleFor(p => p.UnitPrice)
         .NotEmpty().WithMessage("{PropertyName} is required.")
         .NotNull()
