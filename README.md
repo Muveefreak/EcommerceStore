@@ -62,6 +62,3 @@ Code Structure
 
 ## Database Structure
 ![Auctria_DB_Diagram](https://github.com/Muveefreak/EcommerceStore/assets/13546416/11e9513a-b2f7-4718-98b4-c28f7261ec9f)
-
-```
-
