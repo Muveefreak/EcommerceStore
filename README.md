@@ -1,7 +1,6 @@
-# (Demo) Auctria Source Code COntainging the following Solutions
-# EcommerceStore
-
-this management system that will help the government to manage and process requests for PCR tests
+# (Demo) Auctria Source Code Containing the following Solutions
+# EcommerceStore 
+- This solution implements an ecommerce store 
 
 ## Architecture Used
 
@@ -15,12 +14,12 @@ Code Structure
      - Auctria.EcommerceStore.Web.API (API Endpoint)
 #Infrastructure
   - #Infrastructure
-     - Auctria.EcommerceStore.Infrastructure (Includes Caching implementation, Entity configurations) 
+     - Auctria.EcommerceStore.Infrastructure (Includes Caching Implementation, Entity Configurations) 
   - #Infrastructure.Persistence
-     - Auctria.EcommerceStore.Infrastructure.Persistence (Persistence implementation)
+     - Auctria.EcommerceStore.Infrastructure.Persistence (Persistence Implementation)
 #Core
   - #Application
-     - Auctria.EcommerceStore.Core.Application (EcommerceStore Application Feature implementation) 
+     - Auctria.EcommerceStore.Core.Application (EcommerceStore Application Feature Implementation) 
   - #Domain
      - Auctria.EcommerceStore.Core.Domain (Entities)
 #Tests
